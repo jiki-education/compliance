@@ -6,10 +6,29 @@ This checklist tracks the documentation status for all 93 ISO 27001:2022 Annex A
 
 - Total Controls: 93
 - Documented: 0/93 (0%)
+- Policies Created: 1/14 (Information Security Policy completed)
 
 ## Organizational Controls (37 controls)
 
 ### Information Security Policies
+
+#### Required Policy Documents (TODOs for A.5.1)
+- [x] Create Information Security Policy (main policy document)
+- [ ] Create Data Protection Policy
+- [ ] Create Data Retention Policy
+- [ ] Create Access Control Policy
+- [ ] Create Risk Management Policy
+- [ ] Create Information Classification and Handling Policy
+- [ ] Create Acceptable Use Policy
+- [ ] Create Remote Working Policy
+- [ ] Create Business Continuity Policy
+- [ ] Create Backup Policy
+- [ ] Create Change Management Policy
+- [ ] Create Supplier Security Policy
+- [ ] Create Incident Response Policy
+- [ ] Create Password and Authentication Policy
+
+#### Control Documentation
 - [ ] A.5.1 - Policies for information security
 - [ ] A.5.2 - Information security roles and responsibilities
 - [ ] A.5.3 - Segregation of duties

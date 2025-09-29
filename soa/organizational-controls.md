@@ -10,30 +10,49 @@ This document covers all 37 organizational controls from ISO 27001:2022 Annex A.
 Information security policy and topic-specific policies shall be defined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.
 
 ### Applicability Status
-**Applicable:** TBD
+**Applicable:** Yes
 
 ### Implementation Status
-**Status:** Not Implemented
+**Status:** In Progress
 
 ### Control Owner
-**Owner:** TBD
+**Owner:** Jeremy Walker (CEO)
 
 ### Implementation Description
-TODO: Document information security policies
+Jiki has developed a comprehensive Information Security Policy that establishes the framework for protecting information assets and achieving ISO 27001 compliance. The policy:
+
+- Defines information security objectives and principles
+- Establishes roles and responsibilities
+- Commits to continuous improvement
+- References supporting topic-specific policies (to be developed)
+- Includes CEO statement of commitment
+- Establishes annual review cycle
+
+The policy follows industry-standard format based on Secureframe templates and covers all ISO 27001 clause 5.2 requirements.
 
 ### Evidence
-- [ ] Information Security Policy
-- [ ] Policy approval records
-- [ ] Communication records
-- [ ] Review records
+- [✓] Information Security Policy (policies/information-security-policy.md)
+- [✓] Policy approval by CEO (signature line included)
+- [✓] Communication via documentation system
+- [✓] Annual review cycle established
+- [ ] Topic-specific policies (planned):
+  - [ ] Data Protection Policy
+  - [ ] Access Control Policy
+  - [ ] Acceptable Use Policy
+  - [ ] Incident Response Policy
+  - [ ] Business Continuity Policy
+  - [ ] Supplier Security Policy
+  - [ ] Information Classification Policy
+  - [ ] Remote Working Policy
+  - [ ] Password and Authentication Policy
 
 ### Risk References
-**Related Risks:** TBD
+**Related Risks:** Unauthorized access, data breaches, non-compliance
 
 ### Review History
 | Date | Reviewer | Status | Notes |
 |------|----------|--------|-------|
-| 2024-09-29 | TBD | Initial Documentation | Baseline established |
+| 2025-01-29 | Jeremy Walker | In Progress | Information Security Policy created |
 
 ---
 

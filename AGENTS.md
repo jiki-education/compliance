@@ -4,6 +4,9 @@
 
 You are an AI agent working in the Jiki compliance repository. Your primary responsibility is to collect, document, and organize authoritative data from across the Jiki ecosystem to support ISO 27001 certification and ongoing compliance management.
 
+Important: Remember that Jiki is a tiny organisation (one CEO, one dev, one product person). 
+All responsibilities are the responsibility of the CEO. When writing, don't try to make the company sound bigger. Stay realistic and define things that are realistic and achievable with this context.
+
 ## Core Objectives
 
 1. **Data Collection**: Gather factual, verified information from parallel Jiki repositories
@@ -99,45 +102,49 @@ From each repository, gather:
 
 ## Documentation Structure
 
-### Fact Recording Format
+### CRITICAL: Facts Folder - Single Source of Truth
 
-When documenting facts, use this structure:
+**MANDATORY**: The `facts/` folder is the ONLY authoritative source of truth for all Jiki information. All compliance documentation MUST reference these facts.
 
-```markdown
-## [Fact Category]
-
-**Fact**: [Clear statement of the fact]
-**Source**: [repository/path/file.md:line]
-**Date Verified**: [YYYY-MM-DD]
-**ISO 27001 Relevance**: [Relevant clause or control]
-**Status**: [Implemented/Planned/In Progress]
-**Evidence**: [Link to supporting evidence]
-**Notes**: [Additional context if needed]
-```
-
-### File Organization
-
-Create and maintain files in this structure:
-
+#### Facts Folder Structure:
 ```
 facts/
-├── technical/
-│   ├── architecture.md
-│   ├── access-control.md
-│   ├── encryption.md
-│   ├── monitoring.md
-│   └── development-security.md
-├── organizational/
-│   ├── roles-responsibilities.md
-│   ├── policies.md
-│   ├── training.md
-│   └── third-parties.md
-├── operational/
-│   ├── incident-management.md
-│   ├── business-continuity.md
-│   ├── change-management.md
-│   └── maintenance.md
-└── index.md  # Master index of all facts
+├── README.md           # Explains the purpose and structure
+├── organizational.md   # Company structure, roles, decision-making
+├── technical.md       # Infrastructure, access, deployment
+├── data.md           # Data types, retention, classification
+├── business.md       # Platform overview, model, objectives
+└── security.md       # Security boundaries, policies, requirements
+```
+
+#### Facts Management Rules:
+1. **Only Stakeholder Input**: Facts folder contains ONLY verified information provided directly by stakeholders
+2. **No Assumptions**: NEVER add assumed, inferred, or researched information
+3. **Immediate Updates**: Update facts in real-time during stakeholder conversations
+4. **Reference Always**: All compliance documents MUST reference facts folder content
+5. **Accuracy Essential**: Cross-check all documentation against facts folder before finalizing
+6. **Single Source**: Facts are the foundation - all other documents derive from them
+
+#### When Gathering Information:
+1. Ask stakeholders specific, detailed questions
+2. Document answers immediately in appropriate facts file
+3. Mark unclear items for follow-up rather than guessing
+4. Use facts folder content as the ONLY source for creating compliance documentation
+5. Never create documentation based on assumptions or external research
+
+### Compliance Documentation Format
+
+When documenting compliance evidence (NOT in facts folder), use this structure:
+
+```markdown
+## [Control or Requirement]
+
+**Requirement**: [ISO 27001 requirement]
+**Implementation**: [How Jiki implements this, referencing facts]
+**Source**: [facts/filename.md - specific section]
+**Status**: [Implemented/Planned/In Progress/Not Applicable]
+**Evidence**: [Specific evidence from facts]
+**Gaps**: [What's missing, if anything]
 ```
 
 ## Workflow
