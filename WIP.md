@@ -1,4 +1,4 @@
-# Information Security Policy - Information Gathering (WIP)
+# Data Protection Policy - Information Gathering (WIP)
 
 ## 1. Organizational Context
 
@@ -245,15 +245,116 @@
 - Confidential (user data, source code)
 - Restricted (passwords, API keys)
 
-## COMPLETED CLARIFICATIONS
+## QUESTIONS FOR DATA PROTECTION POLICY
 
-All questions have been answered. Ready to proceed with policy creation.
+### Data Subject Rights (GDPR-aligned)
+1. How do users request access to their data?
+2. How do users request deletion of their data?
+3. How do users request data portability (export)?
+4. What is the response time target for these requests?
 
-## NEXT STEPS
+### Data Breach Handling
+1. What is the procedure when a data breach is detected?
+2. Who needs to be notified (internally and externally)?
+3. What is the timeline for breach notification?
+4. Where are breach incidents documented?
 
-1. Create facts folder with source of truth documentation
-2. Update AGENTS.md with facts folder instructions
-3. Draft Information Security Policy
-4. Update control A.5.1 in organizational-controls.md
-5. Create incident response procedures document
-6. Create business continuity plan document
+### Data Processing
+1. What is the lawful basis for processing user data (consent, contract, legitimate interest)?
+2. Are there any automated decision-making processes?
+3. Is there any profiling of users?
+
+### Data Transfers
+1. Are there any international data transfers outside UK/EU?
+2. If yes, what mechanisms are used (SCCs, adequacy decisions, etc.)?
+
+### Third-Party Data Sharing
+1. Beyond Stripe, are there any other third parties that receive user data?
+2. Are there any data sharing agreements with partners?
+3. Is user data ever sold or shared for marketing?
+
+### Data Minimization
+1. What is the process for determining what data to collect?
+2. How often is data necessity reviewed?
+
+### Data Security Measures (specific to data protection)
+1. Is data encrypted at rest?
+2. Is data encrypted in transit?
+3. What access controls are in place for data?
+4. Are there any data anonymization processes?
+
+### Children's Data
+1. Does Jiki have any age restrictions?
+2. Is there a process to verify users are not children?
+
+### Marketing and Communications
+1. How do users opt-in/opt-out of marketing communications?
+2. What data is used for marketing purposes?
+
+## COMPLETION SUMMARY
+
+✅ **Data Protection Policy Created**
+- Document location: `/Users/iHiD/Code/jiki/compliance/policies/data-protection-policy.md`
+- Version: 1.0
+- Status: Complete
+
+✅ **Facts Files Updated**
+- `facts/data.md` - Added data subject rights, breach response, age restrictions, marketing, data minimization, encryption
+- `facts/security.md` - Added encryption details
+
+✅ **Technical TODOs Added**
+- Implement "Delete Account" button on website
+- Implement data export/portability function
+
+✅ **Progress Tracker Updated**
+- `todo.md` - Marked Data Protection Policy as complete
+- Progress: 2/14 policies completed
+
+## ANSWERS GATHERED
+
+### Data Subject Rights
+- **Access requests:** Email to data@jiki.io, 30-day response time
+- **Deletion:** Delete account button on website (TODO: implement in TECH_TODO)
+- **Portability:** Same mechanism as deletion
+- **Response time:** 30 days (GDPR compliant)
+
+### Data Breach Handling
+- **Procedure:** CEO investigates, contains breach, documents incident
+- **Notifications:** Affected users + ICO (only if personal data stolen)
+- **Timeline:** Within 72 hours to ICO, immediate to affected users
+- **Documentation:** GitHub issue
+
+### Data Processing
+- **Lawful basis:** Contract (processing necessary to provide service)
+- **Automated decision-making:** None currently (future: TBD, will add disclosures if implemented)
+- **Profiling:** None currently (future: TBD, will add disclosures if implemented)
+
+### Data Transfers
+- **International transfers:** None to third parties
+- **User access:** Data sent to users in their countries (normal website delivery)
+
+### Third-Party Data Sharing
+- **Data processors:** AWS (storage), Stripe (payments)
+- **Partnerships:** None
+- **Marketing/Sales:** No data sold or shared for marketing
+
+### Data Minimization
+- **Decision process:** CEO decides based on feature requirements
+- **Review frequency:** When adding new features
+
+### Data Security
+- **Encryption at rest:** Yes (Aurora)
+- **Encryption in transit:** Yes (HTTPS/TLS)
+- **Access controls:** CEO only, MFA, IP restrictions
+- **Anonymization:** None implemented
+
+### Children's Data
+- **Age restriction:** 13+ in Terms & Conditions
+- **Verification:** No checkbox required
+- **Under 13 discovery:** Delete account if discovered
+
+### Marketing Communications
+- **Opt-in mechanisms:** Checkbox at signup, account settings
+- **Opt-out mechanisms:** Unsubscribe link, account settings
+- **Current status:** No marketing emails currently sent
+- **Data used:** None (no marketing activity)

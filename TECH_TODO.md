@@ -100,6 +100,10 @@
 
 ## Data Protection
 
+### Data Subject Rights
+- [ ] Implement "Delete Account" button on website (user-initiated account deletion)
+- [ ] Implement data export/portability function (JSON or CSV format)
+
 ### Data Classification
 - [ ] Implement data classification scheme in application
 - [ ] Tag AWS resources according to data classification

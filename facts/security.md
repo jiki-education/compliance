@@ -30,6 +30,11 @@
 - Consider IP blocking for repeated failures
 - No immediate alerting required
 
+## Data Encryption
+- **Encryption at Rest:** Yes (Aurora database)
+- **Encryption in Transit:** Yes (HTTPS/TLS)
+- **Anonymization:** None implemented
+
 ## Audit and Compliance
 - **Audit Log Retention:** 1 year for administrative actions
 - **Administrative Actions to Log:**
