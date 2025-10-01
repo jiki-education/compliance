@@ -138,3 +138,7 @@ For questions about compliance or this repository, contact the Jiki security tea
 - [ISO 27001 Standard](https://www.iso.org/standard/82875.html)
 - [ISO 27001 Summary](./ISO27001-summary.md)
 - [Agent Instructions](./AGENTS.md)
+
+---
+
+Copyright (c) 2025 Jiki Ltd. All rights reserved.
